@@ -34,7 +34,6 @@ class WibutlerCover(CoverEntity):
         )
         self._position = None
         self._last_command = None  # Speichert den letzten gesendeten Wert (ON oder OFF)
-        self._fetch_state(device.get("components", []))
 
     def _fetch_state(self, components):
         """Initialisiert die aktuelle Position aus den Gerätedaten."""
